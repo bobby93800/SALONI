@@ -243,11 +243,11 @@ def myinfo_command(message):
     if not user_data:
         # User not found in the database
         response = "*❌ Oops! No account information found!* \n"  # Account not found message
-        response += "*For assistance, please contact the owner: @GAURAV_BHAI1* "  # Contact owner message
+        response += "*For assistance, please contact the owner: @Aadiop0* "  # Contact owner message
     elif user_data.get('plan', 0) == 0:
         # User found but not approved
         response = "*🔒 Your account is still pending approval!* \n"  # Not approved message
-        response += "*Please reach out to the owner for assistance: @GAURAV_BHAI1* 🙏"  # Contact owner message
+        response += "*Please reach out to the owner for assistance: @Aadiop0* 🙏"  # Contact owner message
     else:
         # User found and approved
         username = message.from_user.username or "Unknown User"  # Default username if none provided
